@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+      }
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 40px;
+        padding: 50px;
+      }
+      .pricing-plan {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+.plan-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.plan-price {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.plan-features li {
+  margin: 10px 0;
+}
+
+.plan-button {
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.plan-button:hover {
+  background-color: #e55d00;
+}
+      /* Hint:  Wat kun je doen met een media query en flexbox?  */
+      @media (max-width: 1250px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <b><div class="plan-title">Basis</div></b>
+        <b><div class="plan-price">€11,99/maand</div></b>
+        <ul class="plan-features">
+          <li>✅ 10GB Opslag</li>
+          <li>✅ 1 Gebruiker</li>
+          <li>🚫 Ondersteuning</li>
+        </ul>
+        <button class="plan-button">Aanmelden</button>
+      </div>
+      <div class="pricing-plan">
+        <b><div class="plan-title">Standaard</div></b>
+        <b><div class="plan-price">€19,99/maand</div></b>
+        <ul class="plan-features">
+          <li>✅ 50GB Opslag</li>
+          <li>✅ 5 Gebruikers</li>
+          <li>✅ Telefonische &amp; E-mailondersteuning</li>
+        </ul>
+        <button class="plan-button">Aanmelden</button>
+      </div>
+      <div class="pricing-plan">
+        <b> <div class="plan-title">Premium</div></b>
+        <b><div class="plan-price">€49,99/maand</div></b>
+        <ul class="plan-features">
+          <li>✅ 100GB Opslag</li>
+          <li>✅ 10 Gebruikers</li>
+          <li>✅ 24/7 Ondersteuning</li>
+        </ul>
+        <button class="plan-button">Aanmelden</button>
+      </div>
+    </div>
+  </body>
+  
